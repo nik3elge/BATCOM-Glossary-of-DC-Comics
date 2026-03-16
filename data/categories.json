@@ -1,1 +1,14 @@
-
+[
+  { "id": "characters", "name": "Имена персонажей", "icon": "👤" },
+  { "id": "aliases", "name": "Псевдонимы", "icon": "🎭" },
+  { "id": "organizations", "name": "Организации и группы", "icon": "🏛" },
+  { "id": "locations", "name": "Локации", "icon": "📍" },
+  { "id": "concepts", "name": "Явления и концепции", "icon": "✨" },
+  { "id": "objects", "name": "Предметы и техника", "icon": "⚙️" },
+  { "id": "events", "name": "События и истории", "icon": "📖" },
+  { "id": "creatures", "name": "Животные и чудовища", "icon": "🐉" },
+  { "id": "language", "name": "Термины и язык", "icon": "🔤" },
+  { "id": "authors", "name": "Авторы", "icon": "✍️" },
+  { "id": "phrases", "name": "Выражения", "icon": "💬" },
+  { "id": "comics", "name": "Комиксы", "icon": "📚" }
+]
