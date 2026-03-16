@@ -23,11 +23,11 @@ terms.forEach(term => {
 const row = document.createElement("tr");
 
 row.innerHTML = `
-<td>${term.category}</td>
-<td>${term.en.join(", ")}</td>
-<td>${term.ru.join(", ")}</td>
-<td>${term.description}</td>
-<td>${term.see_also.join(", ")}</td>
+<td>${term.category || ""}</td>
+<td>${(term.en || []).join(", ")}</td>
+<td>${(term.ru || []).join(", ")}</td>
+<td>${term.description || ""}</td>
+<td>${Array.isArray(term.see_also) ? term.see_also.join(", ") : ""}</td>
 <td>${term.translator_note ? "ⓘ" : ""}</td>
 `;
 
