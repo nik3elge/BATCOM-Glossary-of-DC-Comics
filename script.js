@@ -10,6 +10,9 @@ const terms = [
 ...characters
 ];
 
+// сортировка по английскому термину
+terms.sort((a, b) => a.en[0].localeCompare(b.en[0]));
+
 renderTerms(terms);
 
 }
