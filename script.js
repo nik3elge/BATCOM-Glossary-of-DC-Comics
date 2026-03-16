@@ -1,43 +1,54 @@
 async function loadTerms() {
+  const categories = await fetch("data/categories.json").then(r => r.json());
 
-const categories = await fetch("data/categories.json")
-.then(r => r.json());
+  // Список всех файлов с терминами
+  const files = [
+    "characters.json",
+    "aliases.json",
+    "organizations.json",
+    "locations.json",
+    "concepts.json",
+    "objects.json",
+    "events.json",
+    "creatures.json",
+    "language.json",
+    "authors.json",
+    "phrases.json",
+    "comics.json"
+  ];
 
-const characters = await fetch("data/characters.json")
-.then(r => r.json());
+  let terms = [];
 
-const terms = [
-...characters
-];
+  // Загружаем все файлы терминов
+  for (const file of files) {
+    const data = await fetch(`data/${file}`).then(r => r.json());
+    terms = terms.concat(data);
+  }
 
-// сортировка по английскому термину
-terms.sort((a, b) => a.en[0].localeCompare(b.en[0]));
+  // сортировка по английскому основному термину
+  terms.sort((a, b) => (a.en[0] || "").localeCompare(b.en[0] || ""));
 
-renderTerms(terms);
-
+  renderTerms(terms);
 }
 
 function renderTerms(terms) {
+  const table = document.getElementById("termsBody");
+  table.innerHTML = ""; // очистка перед отрисовкой
 
-const table = document.getElementById("termsBody");
+  terms.forEach(term => {
+    const row = document.createElement("tr");
 
-terms.forEach(term => {
+    row.innerHTML = `
+      <td>${term.category || ""}</td>
+      <td>${(term.en || []).join(", ")}</td>
+      <td>${(term.ru || []).join(", ")}</td>
+      <td>${term.description || ""}</td>
+      <td>${Array.isArray(term.see_also) ? term.see_also.join(", ") : ""}</td>
+      <td>${term.translator_note ? "ⓘ" : ""}</td>
+    `;
 
-const row = document.createElement("tr");
-
-row.innerHTML = `
-<td>${term.category || ""}</td>
-<td>${(term.en || []).join(", ")}</td>
-<td>${(term.ru || []).join(", ")}</td>
-<td>${term.description || ""}</td>
-<td>${Array.isArray(term.see_also) ? term.see_also.join(", ") : ""}</td>
-<td>${term.translator_note ? "ⓘ" : ""}</td>
-`;
-
-table.appendChild(row);
-
-});
-
+    table.appendChild(row);
+  });
 }
 
 loadTerms();
