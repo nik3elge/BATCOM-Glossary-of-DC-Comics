@@ -21,9 +21,14 @@ async function loadTerms() {
 
   // Загружаем все файлы терминов
   for (const file of files) {
-    const data = await fetch(`data/${file}`).then(r => r.json());
+  try {
+    const res = await fetch(`data/${file}`);
+    const data = await res.json();
     terms = terms.concat(data);
+  } catch (err) {
+    console.error(`Ошибка при загрузке ${file}:`, err);
   }
+}
 
   // сортировка по английскому основному термину
   terms.sort((a, b) => (a.en[0] || "").localeCompare(b.en[0] || ""));
