@@ -1,11 +1,11 @@
 [
   {
-    "id": "adam-strange",
+    "id": "bruce-wayne",
     "category": "characters",
-    "en": ["Adam Strange"],
-    "ru": ["Адам Стрэндж"],
-    "description": "Земной герой, сражающийся с преступностью в галактике при помощи лазерного оружия и реактивного ранца, отец Алии Стрэндж.",
-    "see_also": "",
+    "en": ["Bruce Wayne"],
+    "ru": ["Брюс Уэйн"],
+    "description": "Американский миллиардер и альтер эго Бэтмена.",
+    "see_also": ["batman"],
     "translator_note": ""
   }
 ]
