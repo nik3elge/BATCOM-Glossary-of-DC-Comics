@@ -1,10 +1,11 @@
 # Глоссарий DC Comics от BATCOM
 
-![type](https://img.shields.io/badge/type-glossary-informational)
-![dc](https://img.shields.io/badge/universe-DC%20Comics-0c5ceb)
-![language](https://img.shields.io/badge/language-RU%20%2F%20EN-lightgrey)
-![Static Badge](https://img.shields.io/badge/total%20entries-2232-orange)
+[![type](https://img.shields.io/badge/type-glossary-informational)](https://dc.nananabat.com)
+[![universe](https://img.shields.io/badge/universe-DC%20Comics-0c5ceb)](https://www.dc.com)
+[![language](https://img.shields.io/badge/language-EN/RU-lightgrey)](https://dc.nananabat.com)
+[![entries](https://img.shields.io/badge/entries-2232-orange)](https://dc.nananabat.com)
 [![site](https://img.shields.io/badge/site-online-brightgreen)](https://dc.nananabat.com)
+[![VK](https://img.shields.io/badge/VK-BATCOM-yellow?logo=vk&logoColor=white)](https://vk.com/nananabatcom)
 
 Это комплексный справочник, включающий имена персонажей, их псевдонимы, названия команд, локаций, организаций и других терминов вселенной DC Comics с переводом с английского на русский. Проект предназначен для переводчиков, фанатов и исследователей и стремится обеспечить единообразие и удобство использования терминологии в контексте комиксов, фильмов и видеоигр.
 
