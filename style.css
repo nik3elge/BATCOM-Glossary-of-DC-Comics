@@ -228,13 +228,7 @@ input.search:focus,
   word-wrap: break-word;
 }
 .comment-popup::after {
-  content: '';
-  position: absolute;
-  bottom: 100%;
-  left: 20px;
-  border-width: 6px;
-  border-style: solid;
-  border-color: transparent transparent #1d2a44 transparent;
+  display: none;
 }
 
 /* ===========================
