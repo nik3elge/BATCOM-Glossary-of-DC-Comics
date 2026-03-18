@@ -1,0 +1,413 @@
+/* ===========================
+   Общие стили
+=========================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll; /* полоса прокрутки всегда видна */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #09101d;
+  color: #e6eaf3;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+#description {
+  max-width: 1200px;
+  width: fit-content; /* или width: auto; */
+  margin: 0 auto 30px auto; /* по центру и отступ снизу */
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+#footer {
+  max-width: 900px;
+  width: fit-content; /* или width: auto; */
+  margin: 20px auto 0 auto; /* по центру и отступ снизу */
+  font-size: 12px;
+  text-align: center;
+  color: #8fa4c1;
+}
+
+/* ===========================
+   Меню
+=========================== */
+
+#mainMenu {
+  margin: 10px 0 25px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.menu-btn {
+  position: relative;
+  text-decoration: none;
+  color: #8fa4c1;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 6px 4px;
+  transition: color 0.2s;
+}
+
+.menu-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #4178e7;
+  transition: width 0.25s ease;
+}
+
+.menu-btn:hover {
+  color: #ffffff;
+}
+
+.menu-btn:hover::after {
+  width: 100%;
+}
+
+/* активная страница */
+.menu-btn.active {
+  color: #ffffff;
+}
+
+.menu-btn.active::after {
+  width: 100%;
+}
+
+/* ===========================
+   Стили ссылок
+=========================== */
+a {
+  color: #5aa0ff;
+  text-decoration: none;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+
+a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 4px rgba(90,160,255,0.6);
+}
+
+a:active {
+  color: #4178e7;
+}
+
+a:visited {
+  color: #8fa4c1;
+}
+
+/* ===========================
+   Контейнер таблицы
+=========================== */
+#tableContainer {
+  background: #1d2a44;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+  max-width: 1600px;
+  margin: 0 auto;
+  overflow-x: auto;
+  border: 1px solid rgba(65,120,231,0.1);
+}
+
+/* ===========================
+   Стили поиска
+=========================== */
+input.search,
+#searchBox {
+  margin-bottom: 15px;
+  padding: 10px 14px;
+  width: 100%;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1.5px solid #2d416a;
+  background-color: #0f192e;
+  color: #8fa4c1;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+input.search::placeholder,
+#searchBox::placeholder {
+  color: #8fa4c1;
+}
+
+input.search:focus,
+#searchBox:focus {
+  border-color: #4178e7;
+  box-shadow: 0 0 0 2px rgba(65,120,231,0.15);
+  background-color: #1d2a44;
+}
+
+/* ===========================
+   Стили фильтров-кнопок
+=========================== */
+#categoryButtons {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.category-btn {
+  display: inline-block; 
+  margin: 2px 4px;
+  padding: 10px 14px;
+  border: 1.5px solid #2d416a;
+  border-radius: 8px;
+  background-color: #0f192e;
+  color: #8fa4c1;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 14px;
+}
+.category-btn.active {
+  background-color: #5aa0ff;
+  color: #0f192e;
+}
+.category-btn:hover {
+  background-color: #3b74d1;
+  color: #ffffff;
+}
+
+/* ===========================
+   Стиль ячейки-комментария (кнопка)
+=========================== */
+.comment-cell {
+  padding: 0; /* или минимальный padding */
+  height: 100%; /* займет всю высоту ячейки */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #d6e2ff;
+}
+.comment-cell:hover {
+  color: #5aa0ff;
+  transform: scale(1.1);
+}
+.comment-cell:active {
+  color: #0f192e;
+}
+
+.comment-cell svg {
+  pointer-events: none;
+}
+
+/* ===========================
+   Всплывающее окно комментария
+=========================== */
+.comment-popup {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  max-width: 400px;
+  background: #0f192e;
+  color: #d6e2ff;
+  padding: 12px 14px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+  font-size: 14px;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+.comment-popup::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 20px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #1d2a44 transparent;
+}
+
+/* ===========================
+   Кнопка "Проверка"
+=========================== */
+.Проверка {
+  padding: 0;
+}
+
+.Проверка .check-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  color: #d6e2ff;
+  cursor: pointer;
+
+  transition: color 0.2s, transform 0.15s;
+}
+
+/* фикс состояния ссылки */
+.Проверка .check-btn:visited,
+.Проверка .check-btn:focus {
+  color: #d6e2ff;
+}
+
+/* hover работает нормально */
+.Проверка .check-btn:hover {
+  color: #5aa0ff;
+  transform: scale(1.1);
+}
+
+/* клик */
+.Проверка .check-btn:active {
+  color: #0f192e;
+  transform: scale(0.95);
+}
+
+.Проверка .check-btn svg {
+  pointer-events: none;
+}
+
+/* ===========================
+   Таблица
+=========================== */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+  table-layout: fixed;
+}
+
+th, td {
+  padding: 12px 10px;
+  text-align: left;
+  white-space: normal;
+  word-break: break-word;
+}
+
+td {
+  color: #d6e2ff;
+}
+
+tbody tr {
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  transition: background-color 0.2s, transform 0.15s;
+}
+
+/* ===========================
+   Мягкое чередование строк
+=========================== */
+tbody tr:nth-child(odd) {
+  background-color: #1d2a44;
+}
+tbody tr:nth-child(even) {
+  background-color: #1b2740;
+}
+
+tbody tr:hover {
+  background-color: #24345c;
+  transform: scale(1.003);
+}
+
+/* ===========================
+   Заголовки таблицы
+=========================== */
+table thead th {
+  background-color: #0f192e;
+  color: #f2f6ff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #4178e7;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s;
+}
+table thead th:hover {
+  background-color: #1d2a44;
+}
+th.sorted-asc::after,
+th.sorted-desc::after {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: #5aa0ff;
+}
+th.sorted-asc::after { content: "▲"; }
+th.sorted-desc::after { content: "▼"; }
+
+/* ===========================
+   Пагинация
+=========================== */
+ul.pagination {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 20px;
+}
+ul.pagination li {
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #2d416a;
+  background-color: #1d2a44;
+  color: #e6eaf3;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+ul.pagination li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+ul.pagination li:hover {
+  background-color: #2d416a;
+  border-color: #4178e7;
+  color: #ffffff;
+}
+ul.pagination li.active {
+  background-color: #4178e7;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 10px rgba(65,120,231,0.3);
+}
+
+/* ===========================
+   Мобильная версия
+=========================== */
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr { display: block; }
+  th { display: flex; justify-content: space-between; }
+  tbody tr {
+    margin-bottom: 15px;
+    border-bottom: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #1d2a44;
+  }
+  tbody tr:nth-child(even),
+  tbody tr:nth-child(odd) { background-color: #1d2a44; }
+  td { display: flex; justify-content: space-between; padding: 6px 10px; }
+  td::before { content: attr(data-label); font-weight: 500; color: #8fa4c1; }
+}
