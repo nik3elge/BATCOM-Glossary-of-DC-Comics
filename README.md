@@ -93,9 +93,19 @@
 
 ## Дисклеймер
 
-Этот проект является неофициальным фанатским справочником. DC Comics и все связанные персонажи, названия и элементы принадлежат DC Entertainment и Warner Bros. Проект не является официальным и не связан с правообладателями.
+Этот проект является неофициальным фанатским справочником и не связан с правообладателями. DC Comics и все связанные персонажи, названия и элементы принадлежат DC Entertainment и Warner Bros.
 
 ## Используемые библиотеки
 
 - [List.js](http://listjs.com) — лёгкая библиотека для сортировки, поиска и фильтрации списков на фронтенде.
   Лицензия: MIT License (© 2011–2023 Jonny Strömberg).
+
+---
+
+## English Description
+
+DC Comics glossary (English to Russian) including characters, aliases, teams, locations, and organizations. Designed for translators, fans, and researchers, this project compiles and standardizes existing translation practices to ensure consistent terminology across DC comics, movies, and video games.
+
+## Keywords
+
+DC Comics, словарь, глоссарий, перевод, DC персонажи, DC Universe, русский перевод комиксов
