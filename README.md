@@ -5,7 +5,7 @@
 [![type](https://img.shields.io/badge/type-glossary-informational)](https://dc.nananabat.com)
 [![universe](https://img.shields.io/badge/universe-DC%20Comics-0c5ceb)](https://www.dc.com)
 [![language](https://img.shields.io/badge/language-EN/RU-lightgrey)](https://dc.nananabat.com)
-[![entries](https://img.shields.io/badge/total%20entries-2617-orange)](https://dc.nananabat.com)
+[![entries](https://img.shields.io/badge/total%20entries-2700-orange)](https://dc.nananabat.com)
 [![site](https://img.shields.io/badge/site-online-brightgreen)](https://dc.nananabat.com)
 [![VK](https://img.shields.io/badge/VK-BATCOM-yellow?logo=vk&logoColor=white)](https://vk.com/nananabatcom)
 
