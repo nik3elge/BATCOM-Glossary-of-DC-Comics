@@ -8,7 +8,7 @@
 }
 
 html {
-  overflow-y: scroll; /* полоса прокрутки всегда видна */
+  overflow-y: scroll;
 }
 
 body {
@@ -27,8 +27,8 @@ h1 {
 
 #description {
   max-width: 1200px;
-  width: fit-content; /* или width: auto; */
-  margin: 0 auto 20px auto; /* по центру и отступ снизу */
+  width: fit-content;
+  margin: 0 auto 20px auto;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
@@ -36,15 +36,15 @@ h1 {
 
 #footer {
   max-width: 800px;
-  width: fit-content; /* или width: auto; */
-  margin: 20px auto 10px auto; /* по центру и отступ снизу */
+  width: fit-content;
+  margin: 20px auto 10px auto;
   font-size: 12px;
   text-align: center;
   color: #8fa4c1;
 }
 
 /* ===========================
-   Вкладки (вместо старого меню)
+   Вкладки (меню)
 =========================== */
 #tabsMenu {
   display: flex;
@@ -86,19 +86,6 @@ h1 {
   color: #ffffff;
   background-color: #4178e7;
   box-shadow: 0 4px 10px rgba(65,120,231,0.3);
-}
-
-.about-btn {
-  font-size: 14px;
-  color: #8fa4c1;
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  transition: all 0.3s;
-}
-
-.about-btn:hover {
-  color: #5aa0ff;
-  text-decoration-color: #5aa0ff;
 }
 
 /* ===========================
@@ -207,11 +194,11 @@ input.search:focus,
 }
 
 /* ===========================
-   Стиль ячейки-комментария (кнопка)
+   Стиль ячеек-комментариев и кнопок "Проверка"
 =========================== */
 .comment-cell {
-  padding: 0; /* или минимальный padding */
-  height: 100%; /* займет всю высоту ячейки */
+  padding: 0;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,14 +212,8 @@ input.search:focus,
 .comment-cell:active {
   color: #0f192e;
 }
+.comment-cell svg { pointer-events: none; }
 
-.comment-cell svg {
-  pointer-events: none;
-}
-
-/* ===========================
-   Всплывающее окно комментария
-=========================== */
 .comment-popup {
   display: none;
   position: absolute;
@@ -247,51 +228,23 @@ input.search:focus,
   line-height: 1.4;
   word-wrap: break-word;
 }
-.comment-popup::after {
-  display: none;
-}
 
-/* ===========================
-   Кнопка "Проверка"
-=========================== */
-.Проверка {
-  padding: 0;
-}
-
+.Проверка { padding: 0; }
 .Проверка .check-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
-
   color: #d6e2ff;
   cursor: pointer;
-
   transition: color 0.2s, transform 0.15s;
 }
-
-/* фикс состояния ссылки */
 .Проверка .check-btn:visited,
-.Проверка .check-btn:focus {
-  color: #d6e2ff;
-}
-
-/* hover работает нормально */
-.Проверка .check-btn:hover {
-  color: #5aa0ff;
-  transform: scale(1.1);
-}
-
-/* клик */
-.Проверка .check-btn:active {
-  color: #0f192e;
-  transform: scale(0.95);
-}
-
-.Проверка .check-btn svg {
-  pointer-events: none;
-}
+.Проверка .check-btn:focus { color: #d6e2ff; }
+.Проверка .check-btn:hover { color: #5aa0ff; transform: scale(1.1); }
+.Проверка .check-btn:active { color: #0f192e; transform: scale(0.95); }
+.Проверка .check-btn svg { pointer-events: none; }
 
 /* ===========================
    Таблица
@@ -311,33 +264,17 @@ th, td {
   word-break: break-word;
 }
 
-td {
-  color: #d6e2ff;
-}
+td { color: #d6e2ff; }
 
 tbody tr {
   border-bottom: 1px solid rgba(255,255,255,0.05);
-  transition: background-color 0.2s, transform 0.15s;
+  transition: background-color 0.2s, transform 0.15s, box-shadow 0.2s;
 }
 
-/* ===========================
-   Мягкое чередование строк
-=========================== */
-tbody tr:nth-child(odd) {
-  background-color: #1d2a44;
-}
-tbody tr:nth-child(even) {
-  background-color: #1b2740;
-}
+tbody tr:nth-child(odd) { background-color: #1d2a44; }
+tbody tr:nth-child(even) { background-color: #1b2740; }
+tbody tr:hover { background-color: #24345c; transform: scale(1.003); }
 
-tbody tr:hover {
-  background-color: #24345c;
-  transform: scale(1.003);
-}
-
-/* ===========================
-   Заголовки таблицы
-=========================== */
 table thead th {
   background-color: #0f192e;
   color: #f2f6ff;
@@ -349,9 +286,7 @@ table thead th {
   position: relative;
   transition: background-color 0.2s;
 }
-table thead th:hover {
-  background-color: #1d2a44;
-}
+table thead th:hover { background-color: #1d2a44; }
 th.sorted-asc::after,
 th.sorted-desc::after {
   position: absolute;
@@ -373,6 +308,7 @@ ul.pagination {
   display: flex;
   gap: 8px;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 20px;
 }
 ul.pagination li {
@@ -405,6 +341,94 @@ ul.pagination li.active {
   border: none;
   box-shadow: 0 4px 10px rgba(65,120,231,0.3);
 }
+
+/* ===========================
+   Кнопки иконок
+=========================== */
+.tabs-and-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  background-color: #0f192e;
+  border: 1px solid #2d416a;
+  color: #8fa4c1;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  color: #d6e2ff;
+  background-color: #1d2a44;
+  box-shadow: 0 4px 10px rgba(65,120,231,0.2);
+}
+
+/* ===========================
+   Плавное переключение темы
+=========================== */
+body, #tableContainer, .tabs-container, .icon-btn, input.search, #searchBox, .comment-popup {
+  transition: background-color 0.4s ease, color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* ===========================
+   СВЕТЛАЯ ТЕМА (Modern Light Mode)
+=========================== */
+body.light-theme { background-color: #f0f4f8; color: #1e293b; }
+body.light-theme h1 { color: #0f172a; }
+body.light-theme #description, body.light-theme #footer { color: #475569; }
+
+body.light-theme .tabs-container { background-color: #ffffff; border-color: #cbd5e1; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+body.light-theme .tab-btn { color: #64748b; }
+body.light-theme .tab-btn:hover { color: #3b82f6; }
+body.light-theme .tab-btn.active { background-color: #3b82f6; color: #ffffff; box-shadow: 0 4px 10px rgba(59,130,246,0.3); }
+
+body.light-theme .icon-btn { background-color: #ffffff; border-color: #cbd5e1; color: #64748b; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+body.light-theme .icon-btn:hover { color: #3b82f6; background-color: #f8fafc; }
+
+body.light-theme #tableContainer { background-color: #ffffff; border-color: #e2e8f0; box-shadow: 0 6px 20px rgba(0,0,0,0.06); }
+
+body.light-theme input.search, body.light-theme #searchBox { background-color: #f8fafc; border-color: #cbd5e1; color: #1e293b; }
+body.light-theme input.search::placeholder, body.light-theme #searchBox::placeholder { color: #94a3b8; }
+body.light-theme input.search:focus, body.light-theme #searchBox:focus { background-color: #ffffff; border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59,130,246,0.15); }
+
+body.light-theme .category-btn { background-color: #f8fafc; border-color: #cbd5e1; color: #475569; }
+body.light-theme .category-btn:hover { background-color: #e2e8f0; color: #0f172a; }
+body.light-theme .category-btn.active { background-color: #3b82f6; color: #ffffff; border-color: #3b82f6; }
+
+body.light-theme table thead th { background-color: #f1f5f9; color: #475569; border-bottom: 2px solid #3b82f6; }
+body.light-theme table thead th:hover { background-color: #e2e8f0; }
+
+body.light-theme td { color: #334155; }
+body.light-theme tbody tr { border-bottom: 1px solid #e2e8f0; }
+body.light-theme tbody tr:nth-child(odd) { background-color: #ffffff; }
+body.light-theme tbody tr:nth-child(even) { background-color: #f8fafc; }
+body.light-theme tbody tr:hover { background-color: #eff6ff; }
+
+body.light-theme a { color: #2563eb; }
+body.light-theme a:hover { color: #1d4ed8; text-shadow: none; }
+
+body.light-theme .comment-cell, body.light-theme .Проверка .check-btn { color: #94a3b8; }
+body.light-theme .comment-cell:hover, body.light-theme .Проверка .check-btn:hover { color: #3b82f6; }
+
+body.light-theme .comment-popup { background-color: #ffffff; color: #1e293b; border: 1px solid #e2e8f0; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+
+body.light-theme ul.pagination li { background-color: #ffffff; border-color: #cbd5e1; color: #475569; }
+body.light-theme ul.pagination li:hover { background-color: #f1f5f9; color: #0f172a; }
+body.light-theme ul.pagination li.active { background-color: #3b82f6; color: #ffffff; border-color: #3b82f6; }
 
 /* ===========================
    МОБИЛЬНАЯ ВЕРСИЯ (Адаптация)
@@ -592,168 +616,4 @@ ul.pagination li.active {
     background-color: #ffffff;
     box-shadow: 0 10px 40px rgba(0,0,0,0.2) !important;
   }
-}
-
-/* ===========================
-   Кнопки иконок (GitHub и Тема)
-=========================== */
-.tabs-and-actions {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.action-buttons {
-  display: flex;
-  gap: 10px;
-}
-
-.icon-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 45px;
-  height: 45px;
-  border-radius: 12px;
-  background-color: #0f192e;
-  border: 1px solid #2d416a;
-  color: #8fa4c1;
-  cursor: pointer;
-}
-
-.icon-btn:hover {
-  color: #d6e2ff;
-  background-color: #1d2a44;
-  box-shadow: 0 4px 10px rgba(65,120,231,0.2);
-}
-
-/* ===========================
-   Плавное переключение темы
-=========================== */
-body, #tableContainer, .tabs-container, .icon-btn, input.search, #searchBox, .comment-popup {
-  transition: background-color 0.4s ease, color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
-}
-
-/* ===========================
-   СВЕТЛАЯ ТЕМА (Modern Light Mode)
-=========================== */
-body.light-theme {
-  background-color: #f0f4f8;
-  color: #1e293b;
-}
-
-body.light-theme h1 {
-  color: #0f172a;
-}
-
-body.light-theme #description, 
-body.light-theme #footer {
-  color: #475569;
-}
-
-/* Вкладки и кнопки в светлой теме */
-body.light-theme .tabs-container {
-  background-color: #ffffff;
-  border-color: #cbd5e1;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-}
-body.light-theme .tab-btn { color: #64748b; }
-body.light-theme .tab-btn:hover { color: #3b82f6; }
-body.light-theme .tab-btn.active { background-color: #3b82f6; color: #ffffff; box-shadow: 0 4px 10px rgba(59,130,246,0.3); }
-
-body.light-theme .icon-btn {
-  background-color: #ffffff;
-  border-color: #cbd5e1;
-  color: #64748b;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-}
-body.light-theme .icon-btn:hover {
-  color: #3b82f6;
-  background-color: #f8fafc;
-}
-
-/* Контейнер таблицы и поиск */
-body.light-theme #tableContainer {
-  background-color: #ffffff;
-  border-color: #e2e8f0;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-}
-
-body.light-theme input.search, 
-body.light-theme #searchBox {
-  background-color: #f8fafc;
-  border-color: #cbd5e1;
-  color: #1e293b;
-}
-body.light-theme input.search::placeholder, 
-body.light-theme #searchBox::placeholder {
-  color: #94a3b8;
-}
-body.light-theme input.search:focus, 
-body.light-theme #searchBox:focus {
-  background-color: #ffffff;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
-}
-
-/* Категории */
-body.light-theme .category-btn {
-  background-color: #f8fafc;
-  border-color: #cbd5e1;
-  color: #475569;
-}
-body.light-theme .category-btn:hover { background-color: #e2e8f0; color: #0f172a; }
-body.light-theme .category-btn.active { background-color: #3b82f6; color: #ffffff; border-color: #3b82f6; }
-
-/* Таблица */
-body.light-theme table thead th {
-  background-color: #f1f5f9;
-  color: #475569;
-  border-bottom: 2px solid #3b82f6;
-}
-body.light-theme table thead th:hover { background-color: #e2e8f0; }
-
-body.light-theme td { color: #334155; }
-body.light-theme tbody tr { border-bottom: 1px solid #e2e8f0; }
-body.light-theme tbody tr:nth-child(odd) { background-color: #ffffff; }
-body.light-theme tbody tr:nth-child(even) { background-color: #f8fafc; }
-body.light-theme tbody tr:hover { background-color: #eff6ff; }
-
-/* Ссылки и комментарии */
-body.light-theme a { color: #2563eb; }
-body.light-theme a:hover { color: #1d4ed8; text-shadow: none; }
-
-body.light-theme .comment-cell,
-body.light-theme .Проверка .check-btn { color: #94a3b8; }
-body.light-theme .comment-cell:hover,
-body.light-theme .Проверка .check-btn:hover { color: #3b82f6; }
-
-body.light-theme .comment-popup {
-  background-color: #ffffff;
-  color: #1e293b;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-/* Пагинация */
-body.light-theme ul.pagination li {
-  background-color: #ffffff;
-  border-color: #cbd5e1;
-  color: #475569;
-}
-body.light-theme ul.pagination li:hover { background-color: #f1f5f9; color: #0f172a; }
-body.light-theme ul.pagination li.active { background-color: #3b82f6; color: #ffffff; border-color: #3b82f6; }
-
-/* Мобильная версия для светлой темы */
-@media (max-width: 768px) {
-  body.light-theme tbody tr {
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    border: 1px solid #e2e8f0;
-  }
-  body.light-theme tbody tr:nth-child(even),
-  body.light-theme tbody tr:nth-child(odd) { background-color: #ffffff; }
-  body.light-theme td::before { color: #64748b; }
 }
