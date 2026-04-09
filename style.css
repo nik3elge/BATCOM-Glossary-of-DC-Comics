@@ -438,10 +438,22 @@ body.light-theme ul.pagination li.active { background-color: #3b82f6; color: #ff
     padding: 10px 5px; 
   }
   
+  h1 {
+	font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 800;
+  }
+  
   #description {
     font-size: 14px;
     margin-bottom: 15px;
     padding: 0 10px;
+  }
+  
+  #footer {
+    max-width: 600px;
+    margin: auto 20px 10px 20px;
+    font-size: 10px;
   }
 
   input.search, #searchBox {
