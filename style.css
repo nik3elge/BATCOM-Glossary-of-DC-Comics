@@ -439,21 +439,19 @@ body.light-theme ul.pagination li.active { background-color: #3b82f6; color: #ff
   }
   
   h1 {
-	font-size: 30px;
     margin-bottom: 10px;
-    font-weight: 800;
+	font-size: clamp(16px, 8vw, 36px);
   }
   
   #description {
-    font-size: 14px;
+    font-size: clamp(10px, 4vw, 16px);
     margin-bottom: 15px;
     padding: 0 10px;
   }
   
   #footer {
-    max-width: 600px;
-    margin: 10px 20px 10px 20px;
-    font-size: 10px;
+    font-size: clamp(13px, 2vw, 15px);
+    margin: 0px 20px 20px 20px;
   }
 
   input.search, #searchBox {
@@ -606,6 +604,13 @@ body.light-theme ul.pagination li.active { background-color: #3b82f6; color: #ff
     background-color: #ffffff;
     box-shadow: 0 4px 15px rgba(0,0,0,0.06);
     border: 1px solid #cbd5e1;
+  }
+  
+  body.light-theme #tableContainer {
+    padding: 5px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
   }
   
   body.light-theme tbody tr:nth-child(even),
