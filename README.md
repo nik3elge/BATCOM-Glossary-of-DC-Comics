@@ -5,7 +5,7 @@
 [![type](https://img.shields.io/badge/type-glossary-informational)](https://dc.nananabat.com)
 [![universe](https://img.shields.io/badge/universe-DC%20Comics-0c5ceb)](https://www.dc.com)
 [![language](https://img.shields.io/badge/language-EN/RU-lightgrey)](https://dc.nananabat.com)
-[![entries](https://img.shields.io/badge/total%20entries-2888-red)](https://dc.nananabat.com)
+[![entries](https://img.shields.io/badge/total%20entries-2899-red)](https://dc.nananabat.com)
 [![site](https://img.shields.io/badge/site-online-brightgreen)](https://dc.nananabat.com)
 [![VK](https://img.shields.io/badge/VK-BATCOM-yellow?logo=vk&logoColor=white)](https://vk.com/nananabatcom)
 [![Boosty](https://img.shields.io/badge/Boosty-BATCOM-orange?logo=boosty&logoColor=white)](https://boosty.to/nananabatcom/donate)
@@ -34,6 +34,29 @@
 ---
 
 ## 📈 Этапы развития проекта
+
+<details>
+  <summary>9 АПРЕЛЯ 2026</summary>
+
+Что было сделано:
+
+- Заметно изменён дизайн сайта.
+- Добавлена возможность переключения между светлой и тёмной темами.
+- Переработано меню: теперь оно работает как вкладки, обновляющие содержимое таблицы без перехода на новую страницу — сайт полностью функционирует в рамках одной страницы.
+- Переработана мобильная версия, теперь она отображается корректно.
+- Заданы и добавлены категории для авторов.
+- Раздел «Выражения» пополнен всеми известными клятвами Корпусов Фонарей.
+
+Планы на будущее:
+
+- Добавление всех терминов из четырёх выпусков серии комиксов *New History of the DC Universe (2025).* Осталось около 900.
+
+На данный момент справочник содержит:
+
+- 2834 основных термина.
+- 42 автора.
+- 23 выражения.
+</details>
 
 <details>
   <summary>18 МАРТА 2026 — Первая публичная версия сайта</summary>
