@@ -1,42 +1,45 @@
-# Глоссарий DC Comics от BATCOM
+# 🦸‍♂️ Глоссарий DC Comics от BATCOM
 
 Глоссарий DC Comics от BATCOM — это комплексный справочник, включающий имена персонажей, их псевдонимы, названия команд, локаций, организаций и других терминов Вселенной DC Comics с переводом с английского на русский. Словарь предназначен для переводчиков, фанатов и исследователей и стремится обеспечить единообразие и удобство использования терминологии в контексте комиксов, фильмов и видеоигр.
 
 [![type](https://img.shields.io/badge/type-glossary-informational)](https://dc.nananabat.com)
 [![universe](https://img.shields.io/badge/universe-DC%20Comics-0c5ceb)](https://www.dc.com)
 [![language](https://img.shields.io/badge/language-EN/RU-lightgrey)](https://dc.nananabat.com)
-[![entries](https://img.shields.io/badge/total%20entries-2888-orange)](https://dc.nananabat.com)
+[![entries](https://img.shields.io/badge/total%20entries-2888-red)](https://dc.nananabat.com)
 [![site](https://img.shields.io/badge/site-online-brightgreen)](https://dc.nananabat.com)
 [![VK](https://img.shields.io/badge/VK-BATCOM-yellow?logo=vk&logoColor=white)](https://vk.com/nananabatcom)
+[![Boosty](https://img.shields.io/badge/Boosty-BATCOM-orange?logo=boosty&logoColor=white)](https://boosty.to/nananabatcom/donate)
 
 ---
 
-## О проекте
+## 🔍 О проекте
 
 Этот глоссарий вырос не из желания «сделать правильно», а из необходимости навести порядок в том, что уже существует. В его основе лежит словарь команды [DCCOMICS.RU](http:dccomics.ru "DCCOMICS.RU") (за что им поклон в ноги), который годами передавался между сканлейтерами, дополнялся, искажался, исправлялся и снова расходился по рукам. Своя версия этого словаря долгое время существовала и в рамках команды [BATCOM](https:vk.com/nananabatcom "BATCOM"), постепенно обрастая правками и дополнениями. Однако со временм стало очевидно, что дальше пользоваться этим массивом в его текущем виде невозможно. Его нужно было пересобрать, что и вылилось в этот проект.
 
 Это не попытка:
-- перепридумать переводы,
-- навязать «единственно правильные» варианты,
-- заменить собой всё, что было до.
+- ❌ перепридумать переводы,
+- ❌ навязать «единственно правильные» варианты,
+- ❌ заменить собой всё, что было до.
 
 Это попытка:
-- собрать существующую практику,
-- привести её к единому виду,
-- убрать банальные ошибки и несостыковки,
-- и зафиксировать текущее состояние языка перевода DC.
+- ✅ собрать существующую практику,
+- ✅ привести её к единому виду,
+- ✅ убрать банальные ошибки и несостыковки,
+- ✅ и зафиксировать текущее состояние языка перевода DC.
 
 При составлении глоссария использовались фанатские и официальные переводы, накопленные базы фанатов и оригинальные материалы DC Comics. Каждая запись в глоссарии была проверена и приведена к единому стандарту. Работа включала сопоставление существующих вариантов перевода, анализ оригинальных источников, проверку произношения и контекста, а также устранение противоречий и накопившихся ошибок.
 
 Тем не менее глоссарий не навязывает «правильные» варианты перевода и не претендует на роль окончательного авторитета. Его задача — зафиксировать и упорядочить сложившуюся практику, чтобы выбор конкретного варианта был осознанным. Если переводчик принимает иное решение — так тому и быть. Но теперь решение может опираться на понимание существующих вариантов и их контекста, а не быть результатом случайности или невнимательности.
 
-## Благодарности
+## 🙌 Благодарности
 
-Отдельная благодарность всем переводчикам комиксов DC, чьи работы легли в основу этого глоссария.
+- Спасибо всем переводчикам комиксов DC, чьи работы легли в основу этого глоссария.
+- Отдельная благодарность командам [DARK COMICS](https://vk.com/darkcomics), [DCCOMICS.RU](http://dccomics.ru), [Frankengeek](http://frankengeek.ru), [Hardy](https://vk.com/hardycorp), [Hellcomics](https://vk.com/hellcomics), [Real Deal Team](https://realdealteam.blogspot.com/), [Russian Project Universe](https://rp-universe.ru), [Supercomics](https://supercomics.pro/), [Web of Comics](https://vk.com/webofcomics).
+- Спасибо [Базе русских переводов комиксов](https://comicsdb.ru/) за объединение сообщества.
 
 ---
 
-## ЧаВо
+## ❓ ЧаВо
 
 > #### У меня есть обновления для глоссария — куда их отправлять?
 
@@ -56,7 +59,7 @@
 
 ---
 
-## Этапы развития проекта
+## 📈 Этапы развития проекта
 
 <details>
   <summary>18 МАРТА 2026 — Первая публичная версия сайта</summary>
@@ -91,20 +94,20 @@
 
 ---
 
-## Дисклеймер
+## ⚖️ Дисклеймер
 
 Этот проект является неофициальным фанатским справочником и не связан с правообладателями. DC Comics и все связанные персонажи, названия и элементы принадлежат DC Entertainment и Warner Bros.
 
-## Используемые библиотеки
+## 🛠️ Используемые библиотеки
 
 - [List.js](http://listjs.com) — лёгкая библиотека для сортировки, поиска и фильтрации списков на фронтенде. Лицензия: MIT License (© 2011–2023 Jonny Strömberg).
 
 ---
 
-## English Description
+## 🌐 English Description
 
 DC Comics glossary (English to Russian) including characters, aliases, teams, locations, and organizations. Designed for translators, fans, and researchers, this project compiles and standardizes existing translation practices to ensure consistent terminology across DC comics, movies, and video games.
 
-## Keywords
+## 🔑 Keywords
 
 DC Comics, словарь, глоссарий, перевод, DC персонажи, DC Universe, русский перевод комиксов
