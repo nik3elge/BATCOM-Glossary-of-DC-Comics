@@ -444,7 +444,7 @@ body.light-theme ul.pagination li.active { background-color: #3b82f6; color: #ff
   }
   
   #description {
-    font-size: clamp(10px, 3vw, 15px);
+    font-size: clamp(13px, 3vw, 20px);
     margin-bottom: 15px;
     padding: 0 10px;
   }
