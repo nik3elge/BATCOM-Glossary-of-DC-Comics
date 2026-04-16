@@ -114,7 +114,7 @@
 ## 🙌 Благодарности
 
 - Спасибо всем переводчикам материалов DC Comics, чьи работы легли в основу этого глоссария.
-- Отдельные спасибо командам сканлейтеров [DARK COMICS](https://vk.com/darkcomics), [DCCOMICS.RU](http://dccomics.ru), [Frankengeek](http://frankengeek.ru), [Hardy](https://vk.com/hardycorp), [Hellcomics](https://vk.com/hellcomics), [Real Deal Team](https://realdealteam.blogspot.com/), [Russian Project Universe](https://rp-universe.ru), [Supercomics](https://supercomics.pro/), [Web of Comics](https://vk.com/webofcomics).
+- Отдельные спасибо командам сканлейтеров [DARK COMICS](https://vk.com/darkcomics), [DCCOMICS.RU](http://dccomics.ru), [Frankengeek](http://frankengeek.ru), [Hardy](https://vk.com/hardycorp), [Hellcomics](https://vk.com/hellcomics), [Real Deal Team](https://realdealteam.blogspot.com/), [Russian Project Universe](https://rp-universe.ru), [Spaik Comics](https://spaikcomics.moy.su/), [Supercomics](https://supercomics.pro/), [Web of Comics](https://vk.com/webofcomics).
 - Спасибо [Базе русских переводов комиксов](https://comicsdb.ru/) за объединение сообщества сканлейтеров DC Comics.
 - Спасибо сообществу и авторам статей фанатской вики [DC Database](https://dc.fandom.com), без которой не удалось бы создать этот глоссарий.
 
