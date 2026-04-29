@@ -130,7 +130,3 @@
 ## 🌐 English Description
 
 DC Comics glossary (English to Russian) including characters, aliases, teams, locations, and organizations. Designed for translators, fans, and researchers, this project compiles and standardizes existing translation practices to ensure consistent terminology across DC comics, movies, and video games.
-
-## Keywords
-
-DC Comics, словарь, глоссарий, перевод, DC персонажи, DC Universe, русский перевод комиксов, локализация комиксов, терминология DC
