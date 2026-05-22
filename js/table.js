@@ -357,20 +357,30 @@ themeToggleBtn.addEventListener('click', () => {
   }
 });
 
-// =======================
-// Скрытие/Показ описания
-// =======================
+// ==========================================
+// Скрытие/Показ описания с сохранением состояния
+// ==========================================
 const mainTitle = document.getElementById('mainTitle');
 const description = document.getElementById('description');
 
 if (mainTitle && description) {
-  // Клик по описанию — скрывает его
+  // 1. Проверяем сохранённое состояние при загрузке страницы
+  // Если в localStorage записано 'hidden', скрываем описание
+  const isDescriptionHidden = localStorage.getItem('descriptionHidden') === 'true';
+  
+  if (isDescriptionHidden) {
+    description.classList.add('hidden');
+  }
+
+  // 2. Клик по описанию — скрывает его и сохраняет состояние
   description.addEventListener('click', () => {
     description.classList.add('hidden');
+    localStorage.setItem('descriptionHidden', 'true');
   });
 
-  // Клик по заголовку — возвращает описание
+  // 3. Клик по заголовку — возвращает описание и обновляет состояние
   mainTitle.addEventListener('click', () => {
     description.classList.remove('hidden');
+    localStorage.setItem('descriptionHidden', 'false');
   });
 }
