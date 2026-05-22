@@ -96,10 +96,6 @@ h1 {
   to { opacity: 1; transform: translateY(0); }
 }
 
-table {
-  animation: fadeIn 1.2s ease forwards;
-}
-
 /* ===========================
    Стили ссылок
 =========================== */
@@ -255,6 +251,7 @@ table {
   border-spacing: 0;
   font-size: 14px;
   table-layout: fixed;
+  animation: fadeIn 1.2s ease forwards;
 }
 
 th, td {
@@ -634,7 +631,7 @@ body.light-theme ul.pagination li.active { background-color: #3b82f6; color: #ff
     background-color: #ffffff;
     box-shadow: 0 10px 40px rgba(0,0,0,0.2) !important;
   }
-}
+} /* Вот эта скобка закрывает @media */
 
 /* Интерактивный заголовок и описание */
 #mainTitle {
@@ -650,14 +647,13 @@ body.light-theme ul.pagination li.active { background-color: #3b82f6; color: #ff
   cursor: pointer;
   transition: opacity 0.3s ease, max-height 0.3s ease, margin 0.3s ease;
   overflow: hidden;
-  max-height: 200px; /* Достаточная высота для плавного раскрытия */
+  max-height: 200px;
 }
 
 #description:hover {
   opacity: 0.7;
 }
 
-/* Класс для скрытия описания */
 #description.hidden {
   opacity: 0;
   max-height: 0;
@@ -665,5 +661,16 @@ body.light-theme ul.pagination li.active { background-color: #3b82f6; color: #ff
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
-  pointer-events: none; /* Чтобы нельзя было кликнуть по скрытому элементу */
+  pointer-events: none;
+}
+
+/* Счетчик записей в меню */
+.counter-btn {
+  width: auto !important;
+  padding: 0 12px;
+  min-width: 45px;
+  font-weight: 600;
+  font-size: 18px;
+  user-select: none;
+  cursor: default;
 }
