@@ -635,3 +635,35 @@ body.light-theme ul.pagination li.active { background-color: #3b82f6; color: #ff
     box-shadow: 0 10px 40px rgba(0,0,0,0.2) !important;
   }
 }
+
+/* Интерактивный заголовок и описание */
+#mainTitle {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+#mainTitle:hover {
+  opacity: 0.8;
+}
+
+#description {
+  cursor: pointer;
+  transition: opacity 0.3s ease, max-height 0.3s ease, margin 0.3s ease;
+  overflow: hidden;
+  max-height: 200px; /* Достаточная высота для плавного раскрытия */
+}
+
+#description:hover {
+  opacity: 0.7;
+}
+
+/* Класс для скрытия описания */
+#description.hidden {
+  opacity: 0;
+  max-height: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  pointer-events: none; /* Чтобы нельзя было кликнуть по скрытому элементу */
+}
