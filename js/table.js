@@ -122,6 +122,10 @@ async function renderTab(tabId) {
 
   // Загружаем данные
   const data = await loadCSV(config.csv, config.columns);
+  
+  // Вот сюда! Обновляем счетчик записей
+  document.getElementById('counterValue').textContent = data.length;
+  
   const tbody = document.querySelector('#tableContainer tbody');
 
   // Отрисовка строк
