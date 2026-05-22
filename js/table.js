@@ -356,3 +356,21 @@ themeToggleBtn.addEventListener('click', () => {
     localStorage.setItem('theme', 'dark');
   }
 });
+
+// =======================
+// Скрытие/Показ описания
+// =======================
+const mainTitle = document.getElementById('mainTitle');
+const description = document.getElementById('description');
+
+if (mainTitle && description) {
+  // Клик по описанию — скрывает его
+  description.addEventListener('click', () => {
+    description.classList.add('hidden');
+  });
+
+  // Клик по заголовку — возвращает описание
+  mainTitle.addEventListener('click', () => {
+    description.classList.remove('hidden');
+  });
+}
