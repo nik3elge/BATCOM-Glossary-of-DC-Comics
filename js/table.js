@@ -70,7 +70,7 @@ function normalize(str) {
   return (str || "").toLowerCase()
     .replace(/ё/g, "е")
     .replace(/[-‐-‒–—―]/g, " ")
-    .replace(/[^\p{L}\p{N}\s,]/gu, " ")
+    .replace(/[^\p{L}\p{N}\s,.]/gu, " ")
     .replace(/\s+/g, " ").trim();
 }
 
