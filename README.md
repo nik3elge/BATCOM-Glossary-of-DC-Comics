@@ -1,4 +1,10 @@
 <p align="center">
+  <a href="https://github.com/oil-oil/wolfcha">
+    <img src="./assets/header.svg" width="100%">
+  </a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/type-glossary-informational" alt="type">
   <a href="https://www.dc.com"><img src="https://img.shields.io/badge/universe-DC%20Comics-0c5ceb" alt="universe"></a>
   <img src="https://img.shields.io/badge/language-EN/RU-lightgrey" alt="language">
@@ -8,7 +14,6 @@
   <a href="https://boosty.to/nananabatcom/donate"><img src="https://img.shields.io/badge/Boosty-BATCOM-orange?logo=boosty&logoColor=white" alt="Boosty"></a>
 </p>
 
-<h1 align="center">Глоссарий DC Comics от BATCOM</h1>
 Глоссарий DC Comics от BATCOM — это комплексный справочник, включающий имена персонажей, их псевдонимы, названия команд, локаций, организаций и других терминов Вселенной DC Comics с переводом с английского на русский. Словарь предназначен для переводчиков, фанатов и исследователей и стремится обеспечить единообразие и удобство использования терминологии в контексте комиксов, фильмов и видеоигр.
 
 ---
