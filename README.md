@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/type-glossary-informational" alt="type">
   <a href="https://www.dc.com"><img src="https://img.shields.io/badge/universe-DC%20Comics-0c5ceb" alt="universe"></a>
   <img src="https://img.shields.io/badge/language-EN/RU-lightgrey" alt="language">
-  <a href="https://dc.nananabat.com"><img src="https://img.shields.io/badge/total%20entries-4270-red" alt="entries"></a>
+  <a href="https://dc.nananabat.com"><img src="https://img.shields.io/badge/total%20entries-4297-red" alt="entries"></a>
   <a href="https://dc.nananabat.com"><img src="https://img.shields.io/badge/site-online-brightgreen" alt="site"></a>
   <a href="https://vk.com/nananabatcom"><img src="https://img.shields.io/badge/VK-BATCOM-0077FF?logo=vk&logoColor=white" alt="VK"></a>
   <a href="https://boosty.to/nananabatcom/donate"><img src="https://img.shields.io/badge/Boosty-BATCOM-orange?logo=boosty&logoColor=white" alt="Boosty"></a>
