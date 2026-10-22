@@ -1,0 +1,23 @@
+# Локальные рабочие материалы и базы скриптов
+/docs/
+
+# Системные файлы (Windows / macOS)
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+._*
+
+# Настройки редакторов
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Временные файлы и логи
+*.log
+*.tmp
+*.bak
