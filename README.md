@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/type-glossary-informational" alt="type">
   <a href="https://www.dc.com"><img src="https://img.shields.io/badge/universe-DC%20Comics-0c5ceb" alt="universe"></a>
   <img src="https://img.shields.io/badge/language-EN/RU-lightgrey" alt="language">
-  <a href="https://dc.nananabat.com"><img src="https://img.shields.io/badge/total%20entries-4397-red" alt="entries"></a>
+  <a href="https://dc.nananabat.com"><img src="https://img.shields.io/badge/total%20entries-4418-red" alt="entries"></a>
   <a href="https://dc.nananabat.com"><img src="https://img.shields.io/badge/site-online-brightgreen" alt="site"></a>
   <a href="https://vk.com/nananabatcom"><img src="https://img.shields.io/badge/VK-BATCOM-0077FF?logo=vk&logoColor=white" alt="VK"></a>
   <a href="https://boosty.to/nananabatcom/donate"><img src="https://img.shields.io/badge/Boosty-BATCOM-orange?logo=boosty&logoColor=white" alt="Boosty"></a>
@@ -68,6 +68,7 @@
 - Спасибо всем переводчикам материалов DC Comics, чьи работы легли в основу этого глоссария.
 - Отдельные спасибо командам сканлейтеров [DARK COMICS](https://vk.com/darkcomics), [DCCOMICS.RU](http://dccomics.ru), [Frankengeek](http://frankengeek.ru), [Hardy](https://vk.com/hardycorp), [Hellcomics](https://vk.com/hellcomics), [Real Deal Team](https://realdealteam.blogspot.com/), [Russian Project Universe](https://rp-universe.ru), [Spaik Comics](https://spaikcomics.moy.su/), [Supercomics](https://supercomics.pro/), [Web of Comics](https://vk.com/webofcomics).
 - Спасибо [Базе русских переводов комиксов](https://comicsdb.ru/) за объединение сообщества сканлейтеров DC Comics.
+- Спасибо Совету министров [лучшей читалки 9grid.cc](https://9grid.cc/) за моральную поддержку.
 - Спасибо сообществу и авторам статей фанатской вики [DC Database](https://dc.fandom.com), без которой не удалось бы создать этот глоссарий.
 
 ### Используемые библиотеки
